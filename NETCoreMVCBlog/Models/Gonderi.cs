@@ -11,6 +11,12 @@ namespace NETCoreMVCBlog.Models
 
 		public DateTime YaratilmaZamani { get; set; } = DateTime.Now;
 
-		public List<Yorum> Yorumlar { get; set; } = new List<Yorum>(); 
+		public List<Yorum> Yorumlar { get; set; } = new List<Yorum>();
+
+		// Yoruma gelen Begeni sayisi
+		public int BegenenSayisi { get; set; }
+
+		// Yoruma gelen Begenmeme sayisi
+		public int BegenmeyenSayisi { get; set; }
 	}
 }
